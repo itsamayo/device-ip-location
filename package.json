@@ -1,6 +1,6 @@
 {
   "name": "device-ip-location",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "description": "Get key device information from your systems users i.e operating system & version, browser name & version, location and time as per users locale.",
   "main": "index.js",
   "scripts": {
