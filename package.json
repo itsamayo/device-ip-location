@@ -1,0 +1,22 @@
+{
+  "name": "device-ip-location",
+  "version": "1.0.13",
+  "description": "Get key device information from your systems users i.e operating system & version, browser name & version, location and time as per users locale.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ip",
+    "device",
+    "location",
+    "browser",
+    "operating",
+    "system"
+  ],
+  "author": "Ashley Sanders <ashleymichaelsanders@gmail.com> (https://ashleysanders.co.za)",
+  "license": "ISC",
+  "dependencies": {
+    "node-device-detector": "^1.1.0"
+  }
+}
