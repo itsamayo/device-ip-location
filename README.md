@@ -1,7 +1,8 @@
 # [device-ip-location](https://www.npmjs.com/package/device-ip-location)
 
-### This package only works with nodejs v10+
+### Get device information from your systems users: Device model and version, operating system and version, and an abundance of location information from their ip address
 
+Handy for use in security management for password resetting, detecting new sign in devices etc.
 
 ### Install
 
