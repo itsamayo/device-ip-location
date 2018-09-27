@@ -41,7 +41,7 @@ device.getInfo(agent,requestIp,function(err,res){
         "family": "Windows" },
      "device": { "id": "", "type": "desktop", "brand": "", "model": "" },
      "client":
-      { "engine": "Blink"',
+      { "engine": "Blink",
         "engine_version": "",
         "short_name": "CH",
         "name": "Chrome",
