@@ -16,43 +16,58 @@ const device = require('device-ip-location');
 // Within your API function use your request data (req) to access the required parameters
 // Example agent - 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 var agent = req.headers['user-agent'];
-// Example requestIp - 8.8.8.8
+// Example requestIp - 105.4.4.147
 var requestIp = req.ip
 
-var data = device.getInfo(agent,requestIp);
-
-console.log(data);
+device.getInfo(agent,requestIp,function(err,res){
+    if(err){
+        console.log(err);
+        return
+    } 
+    console.log(res);
+})
 
 ```
 
 ### Result parse
 
 ```json
-{   "device" : 
-    {   "os" : {
-            "short_name" : "AND",
-            "name" : "Android",
-            "version" : "5.0",
-            "platform" : "",
-            "family" : "Android"
-        },
-        "device" : {
-            "id" : "",
-            "type" : "smartphone",
-            "brand" : "ZTE",
-            "model" : "Nubia Z7 max"
-        },
-        "client" : {
-            "engine" : "Blink",
-            "engine_version" : "",
-            "short_name" : "CM",
-            "name" : "Chrome Mobile",
-            "version" : "43.0.2357.78",
-            "type" : "browser"
-        }
-    },
-    "locale" : { "time" : "time: 2018-09-26T21:47:09.559Z" },
-    "ip" : "8.8.8.8" 
-}
+{ device:
+   { os:
+      { short_name: 'WIN',
+        name: 'Windows',
+        version: '10',
+        platform: 'x64',
+        family: 'Windows' },
+     device: { id: '', type: 'desktop', brand: '', model: '' },
+     client:
+      { engine: 'Blink',
+        engine_version: '',
+        short_name: 'CH',
+        name: 'Chrome',
+        version: '69.0.3497.100',
+        type: 'browser' } },
+  locale:
+   { ip: '105.4.4.147',
+     type: 'ipv4',
+     continent_code: 'AF',
+     continent_name: 'Africa',
+     country_code: 'ZA',
+     country_name: 'South Africa',
+     region_code: 'GT',
+     region_name: 'Gauteng',
+     city: 'Johannesburg',
+     zip: '2000',
+     latitude: -26.2309,
+     longitude: 28.0583,
+     location:
+      { geoname_id: 993800,
+        capital: 'Pretoria',
+        languages: [Array],
+        country_flag: 'http://assets.ipstack.com/flags/za.svg',
+        country_flag_emoji: '🇿🇦',
+        country_flag_emoji_unicode: 'U+1F1FF U+1F1E6',
+        calling_code: '27',
+        is_eu: false } } }
 
 ```
