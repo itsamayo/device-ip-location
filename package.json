@@ -1,6 +1,6 @@
 {
   "name": "device-ip-location",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Get device information from your systems users including device, operating system and version, and an abundance of location information from their ip.",
   "main": "index.js",
   "scripts": {
