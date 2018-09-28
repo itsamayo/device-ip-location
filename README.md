@@ -13,7 +13,10 @@ npm install device-ip-location
 ```js
 const device = require('device-ip-location');
 
-// Within your API function use your request data (req) to access the required parameters
+//Make sure bypass the reverse proxy by allowing for IP visibility by enabling proxy trust if you're using express:
+app.enable('trust proxy');
+
+// Within your API function use your request data (req) to access the required parameters (ip and header)
 // Example agent - 'Mozilla/5.0 (Linux; Android 5.0; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36';
 var agent = req.headers['user-agent'];
 // Example requestIp - 105.4.4.147
