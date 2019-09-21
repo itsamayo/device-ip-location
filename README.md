@@ -2,7 +2,9 @@
 
 ### Get device information from your systems users: Device model and version, operating system and version, and an abundance of location information from their ip address
 
-Handy for use in security management for password resetting, detecting new sign in devices etc.
+Use for security management i.e password resetting & detecting new sign in devices etc.
+
+See https://www.npmjs.com/package/device-ip-location 
 
 ### Install
 
