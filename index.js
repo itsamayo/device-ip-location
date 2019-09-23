@@ -4,7 +4,7 @@ const request = require('request');
 
 
 exports.getInfo = function(headerData,ipData,cb){
-    request('http://api.ipstack.com/'+ipData+'?access_key=f5f5dacacca6450fd7a0cd63c1354b2b', function (error, response, body) {
+    request('http://api.ipstack.com/'+ipData+'?access_key=hidden', function (error, response, body) {
         if (error) {
             console.log(error);
             return;            
