@@ -8,7 +8,7 @@ See https://www.npmjs.com/package/device-ip-location
 
 ### Install
 
-npm install device-ip-location 
+```npm i device-ip-location ```
 
 ### Usage
 
