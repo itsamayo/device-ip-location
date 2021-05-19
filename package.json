@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AshKetchumza/device-ip-location"
+    "url": "git://github.com/itsamayo/device-ip-location"
   },
   "keywords": [
     "ip",
@@ -18,7 +18,7 @@
     "operating",
     "system"
   ],
-  "author": "Ashley Sanders <ashleymichaelsanders@gmail.com> (https://ashleysanders.co.za)",
+  "author": "Ashley Sanders <ashleymichaelsanders@gmail.com> (https://ashleysanders.dev)",
   "license": "ISC",
   "dependencies": {
     "node-device-detector": "^1.1.0",
